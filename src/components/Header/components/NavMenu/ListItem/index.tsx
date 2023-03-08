@@ -6,11 +6,13 @@ type PropsTeste = {
   forwardedRef?: string
   children: ReactNode
   href: string
+  targetBlank?: string
 }
 
 export function ListItem({
   children,
   title,
+  targetBlank,
   forwardedRef,
   ...props
 }: PropsTeste) {
@@ -21,6 +23,7 @@ export function ListItem({
           className="block select-none rounded-[6px] bg-chartbox/50 p-3 text-[15px] leading-none no-underline outline-none transition-colors focus:shadow-[0_0_0_1px] focus:shadow-primarycolor hover:bg-charthover"
           {...props}
           ref={forwardedRef}
+          target={targetBlank}
         >
           <div className="mb-[5px] font-medium leading-[1.2] text-heading">
             {title}

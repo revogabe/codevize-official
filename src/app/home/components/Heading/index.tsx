@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 type HeadingProps = {
   title: string
   subtitle: string
@@ -53,23 +55,25 @@ export function Heading({
           {description}
         </p>
       </div>
-      <button
-        className="
-            w-full
-            max-w-sm rounded-lg bg-primarycolor
-              px-8 py-4 text-xl font-bold text-white
-              shadow-lg shadow-primarycolor/30 transition-all
-              
-            duration-300 ease-out 
-              hover:bg-primaryhover hover:text-primarycolor
+      <Link href="/projects">
+        <button
+          className="
+              w-full
+              max-w-sm rounded-lg bg-primarycolor
+                px-8 py-4 text-xl font-bold text-white
+                shadow-lg shadow-primarycolor/30 transition-all
+                
+              duration-300 ease-out 
+                hover:bg-primaryhover hover:text-primarycolor
 
-            hover:shadow-heading/25 max-2xl:max-w-xs max-2xl:px-6 max-2xl:py-3 max-2xl:text-lg max-2xl:shadow-lg max-2xl:shadow-primarycolor/20 max-xl:max-w-sm max-xl:px-8 max-xl:py-4 max-xl:text-xl max-xl:shadow-lg max-xl:shadow-primarycolor/30 max-md:max-w-xs max-md:px-6 max-md:py-3 max-md:text-lg max-md:shadow-lg
+              hover:shadow-heading/25 max-2xl:max-w-xs max-2xl:px-6 max-2xl:py-3 max-2xl:text-lg max-2xl:shadow-lg max-2xl:shadow-primarycolor/20 max-xl:max-w-sm max-xl:px-8 max-xl:py-4 max-xl:text-xl max-xl:shadow-lg max-xl:shadow-primarycolor/30 max-md:max-w-xs max-md:px-6 max-md:py-3 max-md:text-lg max-md:shadow-lg
 
-            max-md:shadow-primarycolor/20
-            "
-      >
-        {buttonTitle}
-      </button>
+              max-md:shadow-primarycolor/20
+              "
+        >
+          {buttonTitle}
+        </button>
+      </Link>
     </div>
   )
 }
