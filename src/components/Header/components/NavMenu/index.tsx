@@ -7,10 +7,10 @@ export function NavMenu() {
     <NavigationMenu.Root className="relative flex w-full justify-end max-md:justify-start">
       <NavigationMenu.List className="m-0 flex w-full list-none justify-end rounded-[6px] p-1">
         <NavigationMenu.Item>
-          <NavigationMenu.Trigger className="group flex select-none items-center justify-between gap-[2px] rounded-[4px] px-3 py-2 text-[15px] font-medium leading-none text-heading outline-none focus:shadow-[0_0_0_2px] focus:shadow-info500 hover:bg-info500">
+          <NavigationMenu.Trigger className="group flex select-none items-center justify-between gap-[2px] rounded-[4px] px-3 py-2 text-[15px] font-medium leading-none text-heading outline-none focus:shadow-[0_0_0_2px] focus:shadow-info500 hover:bg-slate-400/10">
             Learn{' '}
             <CaretDownIcon
-              className="relative top-[1px] text-info500 transition-transform duration-[250] ease-in group-data-[state=open]:-rotate-180"
+              className="relative top-[1px] text-heading transition-transform duration-[250] ease-in group-data-[state=open]:-rotate-180"
               aria-hidden
             />
           </NavigationMenu.Trigger>
@@ -50,10 +50,10 @@ export function NavMenu() {
         </NavigationMenu.Item>
 
         <NavigationMenu.Item>
-          <NavigationMenu.Trigger className="group flex select-none items-center justify-between gap-[2px] rounded-[4px] px-3 py-2 text-[15px] font-medium leading-none text-heading outline-none focus:shadow-[0_0_0_2px] focus:shadow-info500 hover:bg-info500">
+          <NavigationMenu.Trigger className="group flex select-none items-center justify-between gap-[2px] rounded-[4px] px-3 py-2 text-[15px] font-medium leading-none text-heading outline-none focus:shadow-[0_0_0_2px] focus:shadow-info500 hover:bg-slate-400/10">
             Overview{' '}
             <CaretDownIcon
-              className="relative top-[1px] text-info500 transition-transform duration-[250] ease-in group-data-[state=open]:-rotate-180"
+              className="relative top-[1px] text-heading transition-transform duration-[250] ease-in group-data-[state=open]:-rotate-180"
               aria-hidden
             />
           </NavigationMenu.Trigger>
@@ -102,7 +102,7 @@ export function NavMenu() {
 
         <NavigationMenu.Item>
           <NavigationMenu.Link
-            className="block select-none rounded-[4px] px-3 py-2 text-[15px] font-medium leading-none text-heading no-underline outline-none focus:shadow-[0_0_0_2px] focus:shadow-info500 hover:bg-info500"
+            className="block select-none rounded-[4px] px-3 py-2 text-[15px] font-medium leading-none text-heading no-underline outline-none focus:shadow-[0_0_0_2px] focus:shadow-info500 hover:bg-slate-400/10"
             href="https://github.com/radix-ui"
           >
             Github

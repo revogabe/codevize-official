@@ -7,7 +7,7 @@ import { SwitchMode } from './components/SwitchMode'
 
 export function Header() {
   return (
-    <header className=" flex h-max w-full items-center justify-between border-b border-slate-500/20 bg-gradient-to-b from-black/75 to-black/20 px-32 py-6 backdrop-blur max-lg:px-8 max-md:justify-center">
+    <header className="fixed top-0 left-0 right-0 z-30 flex h-max w-full items-center justify-between border-b border-slate-500/20 bg-gradient-to-b from-black/75 to-black/20 px-32 py-6 backdrop-blur max-lg:px-8 max-md:justify-center">
       <div className="max-md:hidden">
         <Image src={vizeSVG} alt="" width={170} />
       </div>

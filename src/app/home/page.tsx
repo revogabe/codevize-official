@@ -8,14 +8,14 @@ export default function Page() {
       className=" mx-32 flex h-screen items-center
     
     justify-between
-
-    gap-16
+      
+    gap-20
 
     max-2xl:mx-8 max-xl:my-16 
 
+    max-xl:mt-40
     max-xl:flex-col
-
-    xl:mt-[-32px]
+    xl:mt-14
     "
     >
       <div className="flex flex-1">

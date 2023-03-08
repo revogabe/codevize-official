@@ -6,7 +6,6 @@ module.exports = {
       data: {
         light: 'ui~="light"',
         dark: 'ui~="dark"',
-        scroll: 'ui~="scroll"',
       },
       colors: {
         startgradient: '#0D1321',
