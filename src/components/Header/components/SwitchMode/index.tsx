@@ -26,12 +26,12 @@ export function SwitchMode() {
       >
         {mode === 'light' ? (
           <>
-            <h1>Light Theme</h1>
+            <h1 className="max-[540px]:hidden">Light Theme</h1>
             <SunIcon />
           </>
         ) : (
           <>
-            <h1>Dark Theme</h1>
+            <h1 className="max-[540px]:hidden">Dark Theme</h1>
             <MoonIcon />
           </>
         )}

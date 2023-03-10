@@ -8,11 +8,11 @@ export default function Projects() {
     <main
       className="first-letter: mx-12 mt-44 flex h-screen items-center
     
-    justify-center
-    max-md:mt-32
+      justify-center
+      max-md:mt-32
 
-    max-sm:mx-6
-    "
+      max-sm:mx-6
+      "
     >
       <div className="h-full max-w-screen-2xl">
         <ul

@@ -113,7 +113,7 @@ export function NavMenu() {
           </NavigationMenu.Content>
         </NavigationMenu.Item>
 
-        <NavigationMenu.Item>
+        <NavigationMenu.Item className="max-[540px]:hidden">
           <NavigationMenu.Link
             className="block select-none rounded-[4px] px-3 py-2 text-[15px] font-medium leading-none text-heading no-underline outline-none focus:shadow-[0_0_0_2px] focus:shadow-info500 hover:bg-slate-400/10"
             href="https://github.com/revogabe/codevize-official"
