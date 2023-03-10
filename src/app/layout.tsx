@@ -18,8 +18,8 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en" className={inter.className}>
       <body
-        className="bg-gradient-to-tl from-startgradient to-endgradient
-      object-cover 
+        className="h-full bg-gradient-to-tl from-startgradient
+      to-endgradient object-cover
       "
       >
         <Header />

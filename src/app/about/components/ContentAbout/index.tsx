@@ -29,7 +29,7 @@ export function ContentAbout({
     >
       <div className="flex flex-row gap-3">
         <h1 className="text-3xl font-extrabold text-white">{heading}</h1>
-        <Question className="text-primarycolor" size={38} />
+        <Question className="text-primarycolor" size={38} weight="fill" />
       </div>
       <div className="h-px w-full bg-info100" />
       <div className="flex flex-col gap-8">

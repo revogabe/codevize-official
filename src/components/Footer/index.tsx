@@ -10,8 +10,8 @@ import {
 
 export default function Footer() {
   return (
-    <main className="mt-12 flex h-max w-full flex-col items-center justify-center gap-8 pb-6">
-      <div className="flex h-max w-max gap-6 py-2">
+    <main className="flex h-max w-full flex-col items-center justify-center gap-8 py-6 ">
+      <div className="flex h-max w-max gap-6">
         <div className="flex h-max w-max cursor-pointer rounded-full bg-transparent p-3 text-heading transition-all duration-300 ease-out hover:bg-gray-600/10 hover:text-primarycolor">
           <TwitterLogo width={24} height={24} />
         </div>

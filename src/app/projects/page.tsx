@@ -46,14 +46,6 @@ export default function Projects() {
             githubLink="https://github.com/revogabe/movie-shuffle"
             liveLink="https://movie-shuffle.vercel.app/"
           />
-          <ProjectItem
-            image={projectsquare}
-            imageMobile={projectMobile}
-            title="Movie Shuffle"
-            description="Lorem ipsum dolor sit amet. Et earum quisquam culpa dolorem ipsum dolor sit amet. Et earum quisquam."
-            githubLink="https://github.com/revogabe/movie-shuffle"
-            liveLink="https://movie-shuffle.vercel.app/"
-          />
         </ul>
       </div>
     </main>

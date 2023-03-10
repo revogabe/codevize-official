@@ -1,4 +1,3 @@
-'use client'
 import { WindowCode } from '@/components/WindowCode'
 import { Heading } from './components/Heading'
 
@@ -14,6 +13,8 @@ export default function Page() {
     max-2xl:mx-8 max-xl:my-16 
 
     max-xl:mt-40
+    max-xl:mb-8
+    max-xl:h-full
     max-xl:flex-col
     xl:mt-14
     "
@@ -22,7 +23,7 @@ export default function Page() {
         <Heading
           title="Hi, We’re "
           subtitle="Codevize"
-          description="Lorem ipsum dolor sit amet. Et earum quisquam culpa dolorem ipsum dolor sit amet. Et earum quisquam."
+          description="We are a team of 2 friends passionate about tech, dedicating ourselves every day to achieve our dream of becoming developers."
           buttonTitle="Our projects!"
         />
       </div>
