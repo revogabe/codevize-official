@@ -10,6 +10,7 @@ interface dataProject {
   imagemobile: string
   gitlink: string
   livelink: string
+  idparams: string
 }
 
 export default async function Projects() {
@@ -48,6 +49,7 @@ export default async function Projects() {
               imageMobile={project.imagemobile}
               githubLink={project.gitlink}
               liveLink={project.livelink}
+              idparams={project.idparams}
             />
           ))}
         </ul>

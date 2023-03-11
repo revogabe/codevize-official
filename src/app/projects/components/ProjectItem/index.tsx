@@ -12,6 +12,7 @@ type ProjectItemProps = {
 
   githubLink: string
   liveLink: string
+  idparams: string
 }
 
 export default function ProjectItem({
@@ -21,6 +22,7 @@ export default function ProjectItem({
   description,
   githubLink,
   liveLink,
+  idparams,
 }: ProjectItemProps) {
   return (
     <div
@@ -33,17 +35,24 @@ export default function ProjectItem({
 
       hover:brightness-125
 
-      max-md:flex-col
+      max-2xl:flex-col
 
     "
     >
-      <div className="max-lg:hidden">
+      <div
+        className="w-400 flex  min-w-fit
+      
+      max-2xl:h-40
+      max-xl:min-w-0
+      max-lg:hidden
+      "
+      >
         <Image
           src={image}
           alt=""
           width={280}
-          height={174}
-          style={{ objectFit: 'cover', borderRadius: '6px' }}
+          height={340}
+          style={{ objectFit: 'cover', width: '100%', borderRadius: '6px' }}
         />
       </div>
       <div className="w-full lg:hidden">

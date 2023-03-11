@@ -11,9 +11,9 @@
   {
     "id": 2,
     "titleproject": "MovieS | Random Movie Generator",
-    "desc": "🙋 Hey guys, I have some really cool news to share with you! My teammate and I created a random movie generator using NextJS 13 by Vercel.",
-    "imageweb": "https://i.imgur.com/CeR4Afe.png",
-    "imagemobile": "https://i.imgur.com/CeR4Afe.png",
+    "desc": "Hey guys, I have some really cool news to share with you! My teammate and I created a random movie generator using NextJS 13 by Vercel.",
+    "imageweb": "https://i.imgur.com/jOLd5cL.png",
+    "imagemobile": "https://i.imgur.com/jOLd5cL.png",
     "gitlink": "https://github.com/revogabe/Movie-Shuffle",
     "livelink": "https://movie-shuffle.vercel.app/"
   },
@@ -21,8 +21,8 @@
     "id": 3,
     "titleproject": "Daily Meal | Random Meal Generator",
     "desc": "A browser based meal plan generator app that allows the user to generate a healthy meal of the day",
-    "imageweb": "https://imgur.com/a/CctK7iO.png",
-    "imagemobile": "https://imgur.com/a/CctK7iO.png",
+    "imageweb": "https://i.imgur.com/AcYUnzR.png",
+    "imagemobile": "https://i.imgur.com/AcYUnzR.png",
     "gitlink": "https://github.com/revogabe/DailyMeal",
     "livelink": "https://daily-meal.vercel.app/"
   }
