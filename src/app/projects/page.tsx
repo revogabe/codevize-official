@@ -1,51 +1,55 @@
+import { Key } from 'react'
 import ProjectItem from './components/ProjectItem'
 // import image
-import projectsquare from '@/assets/imagesProjects/projectsquare.png'
-import projectMobile from '@/assets/imagesProjects/projectmobile.png'
 
-export default function Projects() {
+interface dataProject {
+  id: Key | null | undefined
+  titleproject: string
+  desc: string
+  imageweb: string
+  imagemobile: string
+  gitlink: string
+  livelink: string
+}
+
+export default async function Projects() {
+  const response = await fetch(
+    'https://api.mocki.io/v2/ec46ab1c/api/codevize',
+    {
+      cache: 'no-store',
+    },
+  )
+  const data = await response.json()
+
   return (
     <main
       className="first-letter: mx-12 mt-44 flex h-screen items-center
     
       justify-center
-      max-md:mt-32
-
-      max-sm:mx-6
+      max-xl:mt-40 max-xl:mb-8 max-xl:h-full
+      max-xl:flex-col max-md:mt-32 max-sm:mx-6
       "
     >
-      <div className="h-full max-w-screen-2xl">
+      <div className="h-full max-w-screen-2xl ">
         <ul
           className="grid grid-cols-2 gap-8
         
+          
           max-lg:grid-cols-1
           max-lg:gap-6
         "
         >
-          <ProjectItem
-            image={projectsquare}
-            imageMobile={projectMobile}
-            title="Movie Shuffle"
-            description="Lorem ipsum dolor sit amet. Et earum quisquam culpa dolorem ipsum dolor sit amet. Et earum quisquam."
-            githubLink="https://github.com/revogabe/movie-shuffle"
-            liveLink="https://movie-shuffle.vercel.app/"
-          />
-          <ProjectItem
-            image={projectsquare}
-            imageMobile={projectMobile}
-            title="Movie Shuffle"
-            description="Lorem ipsum dolor sit amet. Et earum quisquam culpa dolorem ipsum dolor sit amet. Et earum quisquam."
-            githubLink="https://github.com/revogabe/movie-shuffle"
-            liveLink="https://movie-shuffle.vercel.app/"
-          />
-          <ProjectItem
-            image={projectsquare}
-            imageMobile={projectMobile}
-            title="Movie Shuffle"
-            description="Lorem ipsum dolor sit amet. Et earum quisquam culpa dolorem ipsum dolor sit amet. Et earum quisquam."
-            githubLink="https://github.com/revogabe/movie-shuffle"
-            liveLink="https://movie-shuffle.vercel.app/"
-          />
+          {data.map((project: dataProject) => (
+            <ProjectItem
+              key={project.id}
+              title={project.titleproject}
+              description={project.desc}
+              image={project.imageweb}
+              imageMobile={project.imagemobile}
+              githubLink={project.gitlink}
+              liveLink={project.livelink}
+            />
+          ))}
         </ul>
       </div>
     </main>

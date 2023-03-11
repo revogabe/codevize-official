@@ -6,6 +6,9 @@ export default function Page() {
       className="mt-40 flex h-screen items-start justify-center 
     
     gap-10
+    max-xl:mb-8
+    max-xl:h-full
+    max-md:mt-32
     "
     >
       <ContentAbout

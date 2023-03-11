@@ -1,12 +1,12 @@
 'use client'
 
 import { GitHubLogoIcon, GlobeIcon } from '@radix-ui/react-icons'
-import Image, { StaticImageData } from 'next/image'
+import Image from 'next/image'
 import Link from 'next/link'
 
 type ProjectItemProps = {
-  image: StaticImageData
-  imageMobile: StaticImageData
+  image: string
+  imageMobile: string
   title: string
   description: string
 
@@ -43,7 +43,7 @@ export default function ProjectItem({
           alt=""
           width={280}
           height={174}
-          style={{ objectFit: 'cover' }}
+          style={{ objectFit: 'cover', borderRadius: '6px' }}
         />
       </div>
       <div className="w-full lg:hidden">
@@ -51,6 +51,7 @@ export default function ProjectItem({
           src={imageMobile}
           alt=""
           width={400}
+          height={154}
           style={{
             objectFit: 'cover',
             width: '100%',
